@@ -1,0 +1,9 @@
+void setup()
+{
+  // put your setup code here, to run once:
+  system("telnetd -l /bin/sh"); //Start the telnet server on Galileo
+  system("ifconfig eth0 xxx.xxx.x.x netmask xxx.xxx.x.x up");
+  // eth0 & netmask is the ip address & Subnetmask of your system
+ 
+}
+void loop(){}
